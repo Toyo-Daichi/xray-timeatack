@@ -1,3 +1,9 @@
 # .gitignore
 **/.chalice
 **/__pycache__
+**/.terraform
+**/.terraform.*
+**/*.tfstate
+**/*.tfstate.*
+**/*.terraform.lock.hcl*
+**/*.tfvars

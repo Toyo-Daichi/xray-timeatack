@@ -12,8 +12,4 @@ app = Chalice(app_name='xray-api-lambda')
 """Main"""
 @app.route('/hello')
 def main():
-    return {'messages': 'Hello world!'}
-
-@app.route('/hello2')
-def main():
-    return {'messages': 'Hello world!!'}
+  return {'messages': 'Hello world!'}

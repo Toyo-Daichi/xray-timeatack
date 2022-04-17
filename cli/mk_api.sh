@@ -3,18 +3,18 @@
 
 echo 'Prepared $chalice new-project function_name'
 #
-chome=${HOME}/xray
+chome=${HOME}/Terminal/xray
 export AWS_ACCOUNT_ID=`aws sts get-caller-identity | jq '.Account' | sed 's/"//g' `
 
 #----------------------------------------------------------------------
 # +++ Set configure
 #----------------------------------------------------------------------
 sysname='xray'
-type='api-lambda'
+type='api-lambda-db'
 app_name=${sysname}-${type}
 config=${chome}/${type}/.chalice/config.json
 stage='dev'
-status='update' # 'create' or 'update'
+status=' update' # 'create' or 'update'
 
 cat << EOF > ${config}
 {
