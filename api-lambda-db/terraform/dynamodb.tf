@@ -19,7 +19,6 @@ resource "aws_dynamodb_table_item" "xray-dynadmodb-item" {
 { 
   "name": {"S": "messages"},
   "contents": {"S": "Hello World from dynamodb!"}
-
 }
 ITEM
 }
